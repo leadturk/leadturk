@@ -11,7 +11,7 @@ This files table contents are outlined below>>>>>
 *******************************************
 
 *** - Default CSS
-*** - Prealoader CSS 
+*** - Prealoader CSS
 *** - Navbar CSS
 *** - Main Banner CSS
 *** - Features CSS
@@ -35,7 +35,7 @@ This files table contents are outlined below>>>>>
 
 
 /* ==============
-    Start Default CSS 
+    Start Default CSS
 ==================================== */
 @import url('https://fonts.googleapis.com/css?family=Fira+Sans:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
 body {
@@ -228,13 +228,13 @@ p {
 	border-color: #f06334;
 }
 /* ==============
-    End Default CSS 
+    End Default CSS
 ==================================== */
 
 
 
 /* ==============
-    Start Preloader CSS 
+    Start Preloader CSS
 ==================================== */
 .preloader {
 	position: fixed;
@@ -275,30 +275,30 @@ p {
 	animation-delay: -1.0s;
 }
 @-webkit-keyframes sk-bounce {
-    0%, 100% { 
-        -webkit-transform: scale(0.0) 
+    0%, 100% {
+        -webkit-transform: scale(0.0)
     }
-    50% { 
-        -webkit-transform: scale(1.0) 
+    50% {
+        -webkit-transform: scale(1.0)
     }
 }
 @keyframes sk-bounce {
-    0%, 100% { 
+    0%, 100% {
         transform: scale(0.0);
         -webkit-transform: scale(0.0);
-    } 50% { 
+    } 50% {
         transform: scale(1.0);
         -webkit-transform: scale(1.0);
     }
 }
 /* ==============
-    End Preloader CSS 
+    End Preloader CSS
 ==================================== */
 
 
 
 /* ==============
-    Start Navbar CSS 
+    Start Navbar CSS
 ==================================== */
 .navbar.is-sticky {
 	background: #fff;
@@ -340,13 +340,13 @@ p {
     padding-right: 0;
 }
 /* ==============
-    End Navbar CSS 
+    End Navbar CSS
 ==================================== */
 
 
 
 /* ==============
-    Start Main Banner CSS 
+    Start Main Banner CSS
 ==================================== */
 .main-banner {
 	height: 680px;
@@ -406,13 +406,13 @@ p {
 	border-radius: 0 0 0 100%;
 }
 /* ==============
-    End Main Banner CSS 
+    End Main Banner CSS
 ==================================== */
 
 
 
 /* ==============
-    Start Features CSS 
+    Start Features CSS
 ==================================== */
 .features-area {
 	padding-bottom: 70px;
@@ -458,12 +458,12 @@ p {
     color: #fff;
 }
 /* ==============
-    End Features CSS 
+    End Features CSS
 ==================================== */
 
 
 /* ==============
-    Start About CSS 
+    Start About CSS
 ==================================== */
 .about-area {
 	position: relative;
@@ -541,12 +541,12 @@ p {
 	color: #737373;
 }
 /* ==============
-    End About CSS 
+    End About CSS
 ==================================== */
 
 
 /* ==============
-    Start Services CSS 
+    Start Services CSS
 ==================================== */
 .services-area {
 	padding-bottom: 70px;
@@ -596,12 +596,12 @@ p {
 	color: #fff;
 }
 /* ==============
-    End Services CSS 
+    End Services CSS
 ==================================== */
 
 
 /* ==============
-    Start Vision CSS 
+    Start Vision CSS
 ==================================== */
 .vision-area {
 	background-image: url(../../assets/img/pattern-4.png);
@@ -684,13 +684,13 @@ p {
 	margin-top: 0;
 }
 /* ==============
-    End Vision CSS 
+    End Vision CSS
 ==================================== */
 
 
 
 /* ==============
-    Start Fun Facts CSS 
+    Start Fun Facts CSS
 ==================================== */
 .funfacts-area {
     background-image: url(../../assets/img/parallax.jpg);
@@ -820,13 +820,13 @@ p {
     margin-bottom: 0;
 }
 /* ==============
-    End Fun Facts CSS 
+    End Fun Facts CSS
 ==================================== */
 
 
 
 /* ==============
-    Start Join Now CSS 
+    Start Join Now CSS
 ==================================== */
 .join-content {
     margin-top: 45px;
@@ -840,13 +840,13 @@ p {
     margin-bottom: 25px;
 }
 /* ==============
-    End Join Now CSS 
+    End Join Now CSS
 ==================================== */
 
 
 
 /* ==============
-    Start How It Works CSS 
+    Start How It Works CSS
 ==================================== */
 .single-box {
     -webkit-box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.06);
@@ -890,13 +890,13 @@ p {
     margin-bottom: 20px;
 }
 /* ==============
-    End How It Works CSS 
+    End How It Works CSS
 ==================================== */
 
 
 
 /* ==============
-    Start Team CSS 
+    Start Team CSS
 ==================================== */
 .our-team {
     text-align: center;
@@ -1092,13 +1092,13 @@ p {
 	position: relative;
 }
 /* ==============
-    End Team CSS 
+    End Team CSS
 ==================================== */
 
 
 
 /* ==============
-    Start Testimonials CSS 
+    Start Testimonials CSS
 ==================================== */
 .testimonials-area {
     padding-bottom: 70px;
@@ -1165,13 +1165,13 @@ p {
 	color: #636363;
 }
 /* ==============
-    End Testimonials CSS 
+    End Testimonials CSS
 ==================================== */
 
 
 
 /* ==============
-    Start FAQ CSS 
+    Start FAQ CSS
 ==================================== */
 .accordion {
     list-style-type: none;
@@ -1209,13 +1209,13 @@ p {
     display: block;
 }
 /* ==============
-    End FAQ CSS 
+    End FAQ CSS
 ==================================== */
 
 
 
 /* ==============
-    Start Pricing CSS 
+    Start Pricing CSS
 ==================================== */
 .pricingTable {
     padding-bottom: 30px;
@@ -1373,13 +1373,13 @@ p {
 	margin-bottom: 0;
 }
 /* ==============
-    End Pricing CSS 
+    End Pricing CSS
 ==================================== */
 
 
 
 /* ==============
-    Start Partner CSS 
+    Start Partner CSS
 ==================================== */
 .partner-area .item {
     text-align: center;
@@ -1388,13 +1388,13 @@ p {
     display: inline-block;
 }
 /* ==============
-    End Partner CSS 
+    End Partner CSS
 ==================================== */
 
 
 
 /* ==============
-    End Subscribe CSS 
+    End Subscribe CSS
 ==================================== */
 .subscribe-area {
     text-align: center;
@@ -1461,13 +1461,13 @@ p {
     height: 135px;
 }
 /* ==============
-    End Subscribe CSS 
+    End Subscribe CSS
 ==================================== */
 
 
 
 /* ==============
-    Start Page Title CSS 
+    Start Page Title CSS
 ==================================== */
 .page-title {
     position: relative;
@@ -1500,13 +1500,13 @@ p {
     text-decoration: none;
 }
 /* ==============
-    End Page Title CSS 
+    End Page Title CSS
 ==================================== */
 
 
 
 /* ==============
-    Start Contact CSS 
+    Start Contact CSS
 ==================================== */
 .contact-box {
 	background: #fff;
@@ -1589,18 +1589,19 @@ p {
 	font-size: 18px;
 }
 /* ==============
-    End Contact CSS 
+    End Contact CSS
 ==================================== */
 
 
 
 /* ==============
-    Start Footer CSS 
+    Start Footer CSS
 ==================================== */
 .footer-area {
     padding-bottom: 0;
 	background-image: url(../../assets/img/pattern-4.png);
 	background-attachment: fixed;
+  margin-top:-200px;
 }
 .single-footer .logo {
 	margin-top: -6px;
@@ -1688,13 +1689,13 @@ p {
     color: #fff;
 }
 /* ==============
-    End Footer CSS 
+    End Footer CSS
 ==================================== */
 
 
 
 /* ==============
-    Start Go Top CSS 
+    Start Go Top CSS
 ==================================== */
 .go-top {
 	position: fixed;
@@ -1719,5 +1720,10 @@ p {
 	color: #fff;
 }
 /* ==============
-    End Go Top CSS 
+    End Go Top CSS
 ==================================== */
+.bold {
+  font-weight: bold;
+      font-size: 1.3em;
+      color: #000;
+}
