@@ -5,17 +5,17 @@ $(document).ready(function(){
     $("#submit_btn").click(function(){
 
         //get input field values
-        //var user_name = $('input[name=name]').val();
+        var user_name = $('input[name=name]').val();
         var user_email = $('input[name=email]').val();
         //var user_message = $('textarea[name=message]').val();
 
         //simple validation at client's end
         //we simply change border color to red if empty field using .css()
         var proceed = true;
-        //if (user_name == "") {
-        //    $('input[name=name]').css('border-color', '#e41919');
-        //    proceed = false;
-        //}
+        if (user_name == "") {
+            $('input[name=name]').css('border-color', '#e41919');
+            proceed = false;
+        }
         if (user_email == "") {
             $('input[name=email]').css('border-color', '#e41919');
             proceed = false;
@@ -30,6 +30,7 @@ $(document).ready(function(){
         if (proceed) {
             //data to be sent to server
             post_data = {
+                'user': user_name,
                 'email': user_email,
                 'choice' : 'contact_form'
             };
