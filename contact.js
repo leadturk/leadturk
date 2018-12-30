@@ -30,7 +30,7 @@ $(document).ready(function(){
         if (proceed) {
             //data to be sent to server
             post_data = {
-                'user': user_name,
+                'name': user_name,
                 'email': user_email,
                 'choice' : 'contact_form'
             };
@@ -39,13 +39,13 @@ $(document).ready(function(){
             var url = 'https://script.google.com/macros/s/AKfycbxk_Np2R_F1LlinTA33bAQPyg5XZn-rrs4M5xWC3lGRvts2kSX_/exec';
             var jqxhr = $.post(url, post_data, function(post_data) {
                     setTimeout(function() {
-                        location.reload();
-                    }, 1000);
+                        window.location.replace('thank-you.html');
+                    }, 500);
                 })
                 .fail(function(data) {
                     setTimeout(function() {
-                        location.reload();
-                    }, 1000);
+                        window.location.replace('error.html');
+                    }, 500);
                 });
 
 
