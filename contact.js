@@ -7,7 +7,7 @@ $(document).ready(function(){
         //get input field values
         var user_name = $('input[name=name]').val();
         var user_email = $('input[name=email]').val();
-        //var user_message = $('textarea[name=message]').val();
+        var user_message = $('textarea[name=message]').val();
 
         //simple validation at client's end
         //we simply change border color to red if empty field using .css()
@@ -21,10 +21,10 @@ $(document).ready(function(){
             proceed = false;
         }
 
-        //if (user_message == "") {
-        //    $('textarea[name=message]').css('border-color', '#e41919');
+        if (user_message == "") {
+            $('textarea[name=message]').css('border-color', '#e41919');
         //    proceed = false;
-        //}
+        }
 
         //everything looks good! proceed...
         if (proceed) {
@@ -32,6 +32,7 @@ $(document).ready(function(){
             post_data = {
                 'name': user_name,
                 'email': user_email,
+                'message': user_message,
                 'choice' : 'contact_form'
             };
 
