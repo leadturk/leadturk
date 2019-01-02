@@ -10,7 +10,7 @@ body {
 /* Everything but the jumbotron gets side spacing for mobile first views */
 
 #logo {
-  width: 100%;
+  max-width: 300px;
 }
 
 .header,
