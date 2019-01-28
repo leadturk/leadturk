@@ -40,12 +40,12 @@ $(document).ready(function(){
             var url = 'https://script.google.com/macros/s/AKfycbxk_Np2R_F1LlinTA33bAQPyg5XZn-rrs4M5xWC3lGRvts2kSX_/exec';
             var jqxhr = $.post(url, post_data, function(post_data) {
                     setTimeout(function() {
-                        window.location.replace('thank-you.html');
+                        window.location.replace('/thank-you.html');
                     }, 500);
                 })
                 .fail(function(data) {
                     setTimeout(function() {
-                        window.location.replace('error.html');
+                        window.location.replace('/error.html');
                     }, 500);
                 });
 
