@@ -2,10 +2,113 @@
 body {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
+  color: #212529;
+}
+
+blockquote {
+    font-style: italic;
+    color: #868e96
+}
+
+a {
+  color: #4977d6;
+}
+
+h1 {
+  padding-top: 1.7rem;
+}
+
+h2 {
+  padding-top: 1.3em;
+}
+
+h3 {
+  padding-top: 1.1rem;
+}
+
+p strong {
+  padding-top: 1rem;
+}
+
+.section-heading {
+    font-size: 36px;
+    font-weight: 700;
+    margin-top: 60px
+}
+
+.caption {
+    font-size: 14px;
+    font-style: italic;
+    display: block;
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px
+}
+
+::-moz-selection {
+    color: #fff;
+    background: #4977d6;
+    text-shadow: none
+}
+
+::selection {
+    color: #fff;
+    background: #4977d6;
+    text-shadow: none
+}
+
+img::-moz-selection {
+    color: #fff;
+    background: 0 0
+}
+
+img::selection {
+    color: #fff;
+    background: 0 0
+}
+
+img::-moz-selection {
+    color: #fff;
+    background: 0 0
+}
+
+b, strong {
+  font-weight: bold;
+}
+
+.gray {
+
+}
+
+.blue {
+  color: #4977d6 !important;
+}
+
+.green {
+}
+
+.red {
+
+}
+
+.bg-gray {
+  background-color: #e8e8e8;
+}
+
+.bg-blue {
+  background-color: #4977d6 !important;
+}
+
+.bg-green {
+}
+
+.bg-red {
+
 }
 
 .container {
-  background-color: white;
 }
 /* Everything but the jumbotron gets side spacing for mobile first views */
 
@@ -34,6 +137,11 @@ body {
     color: #fff;
 }
 
+.btn-theme:hover {
+  background: #31516a;
+  color: #fff;
+}
+
 /* Custom page footer */
 .footer {
   padding-top: 1.5rem;
@@ -44,7 +152,7 @@ body {
 /* Customize container */
 @media (min-width: 48em) {
   .container {
-    max-width: 46rem;
+    /*max-width: 46rem;*/
   }
 }
 .container-narrow > hr {
