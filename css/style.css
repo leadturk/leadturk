@@ -202,29 +202,13 @@ b, strong {
 
 }
 
-@-webkit-keyframes KEYFRAME-NAME {
-  0%   { opacity: 0; }
-  100% { opacity: 1; }
-}
-@-moz-keyframes KEYFRAME-NAME {
-  0%   { opacity: 0; }
-  100% { opacity: 1; }
-}
-@-o-keyframes KEYFRAME-NAME {
-  0%   { opacity: 0; }
-  100% { opacity: 1; }
-}
-@keyframes KEYFRAME-NAME {
-  0%   { opacity: 0; }
-  100% { opacity: 1; }
-}
-
 .sticky-share.visible {
   opacity: 1;
-  -webkit-animation: KEYFRAME-NAME 1.5s ease-in-out;
-  -moz-animation:    KEYFRAME-NAME 1.5s ease-in-out;
-  -o-animation:      KEYFRAME-NAME 1.5s ease-in-out;
-  animation:         KEYFRAME-NAME 1.5s ease-in-out;
+  -webkit-transition: opacity 1.5s ease-in-out;
+  -moz-transition: opacity 1.5s ease-in-out;
+  -ms-transition: opacity 1.5s ease-in-out;
+  -o-transition: opacity 1.5s ease-in-out;
+  transition: opacity 1.5s ease-in-out;
 }
 
 .sticky-share a {
