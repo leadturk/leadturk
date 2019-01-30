@@ -8,6 +8,7 @@ $(document).ready(function(){
         var user_name = $('input[name=name]').val();
         var user_email = $('input[name=email]').val();
         var user_message = $('textarea[name=message]').val();
+        var choice = $('input[name=choice]').val();
 
         //simple validation at client's end
         //we simply change border color to red if empty field using .css()
@@ -33,7 +34,7 @@ $(document).ready(function(){
                 'name': user_name,
                 'email': user_email,
                 'message': user_message,
-                'choice' : 'contact_form'
+                'choice' : choice
             };
 
 
