@@ -21,7 +21,7 @@
   <meta property="og:image" content="https://leadturk.com/img/vassi.png" />
   <link rel="icon" href="img/favicon.png">
 
-  <title>LeadTurk - The Human-powered LinkedIn Lead Generation Tool</title>
+  <title>The Human-powered LinkedIn Lead Generation Tool</title>
 
   <!-- Bootstrap core CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
@@ -49,7 +49,7 @@
             <label class="col-form-label" for="first">How many connection invites per day?</label>
           </div>
           <div class="col-12 col-md-8">
-            <input max="100" id='first' type="text" class="form-control" name="bus_ticket" placeholder="Maximum 100" required/>
+            <input max="100" id='first' type="number" class="form-control" name="bus_ticket" placeholder="max 100" required/>
           </div>
         </div>
         
@@ -58,7 +58,7 @@
             <label class="col-form-label" for="second">How many messages per day?</label>
           </div>
           <div class="col-12 col-md-8">
-            <input max="60" id='second' type="text" class="form-control" name="plane_ticket"  placeholder="Maximum 60" required/><br />
+            <input max="60" id='second' type="number" class="form-control" name="plane_ticket"  placeholder="unlimited" required/><br />
           </div>
         </div>
 
@@ -67,7 +67,7 @@
             <label class="col-form-label" for="third">How many profile views per day?</label>
           </div>
           <div class="col-12 col-md-8">
-            <input max="100" id='third' type="text" class="form-control" name="hotel_expenses"  placeholder="Maximum 100" required/><br />
+            <input max="100" id='third' type="number" class="form-control" name="hotel_expenses"  placeholder="max 100" required/><br />
           </div>
         </div>
 
@@ -76,9 +76,10 @@
             <label class="col-form-label" for="fourth">Amount days per week (max 5)</label>
           </div>
           <div class="col-12 col-md-8">
-            <input max="5" id='fourth' type="text" class="form-control" name="eating_expenses"  placeholder="Maximum 5" required/>
+            <input max="5" id='fourth' type="number" class="form-control" name="eating_expenses"  placeholder="Maximum 5" required/>
           </div>
         </div>
+        <span class="text-danger error"></span>
 
 
         <br /><br />
@@ -116,6 +117,18 @@
 
   <script type="text/javascript">
     $('input').keyup(function(){ // run anytime the value changes
+
+      var $this = $(this);
+      var val = $this.val();
+      var maxVal = parseInt($this.attr("max"));
+      var span = $(".error");
+      var spanMessage = "<span class='error text-danger'>value must be smaller than " + maxVal + "</span>";
+      
+      if (val > maxVal) {
+        $this.prop( "disabled", false );
+        // $( spanMessage ).insertAfter( $this );
+      }
+
       var connectionRequestsPerDay = Number($('#first').val());   // get value of field
       var messagesPerDay = Number($('#second').val()); // convert it to a float
       var profileViewsPerDay  = Number($('#third').val());
@@ -148,6 +161,10 @@
 
       // document.getElementById('total_expenses2').value = connectionRequestsPerDayPrice + messagesPerDayPrice + profileViewsPerDayPrice;
       // add them and output it
+    });
+
+    $("input[type='number']").keyup(function() {
+      
     });
 
   /*
