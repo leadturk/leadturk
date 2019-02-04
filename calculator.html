@@ -127,6 +127,7 @@
       if (val > maxVal) {
         if ($this[0].nextElementSibling.tagName === "SPAN") {
           $this[0].nextElementSibling.classList.remove('d-none');
+          $this.val(maxVal);
           e.preventDefault();
         }
       } else {
