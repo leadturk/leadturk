@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-131465208-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-131465208-1');
+</script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Imagine a steady flow of leads from LinkedIn. This is not an automation tool, it's 100% human powered.">
+  <meta property="og:url" content="https://leadturk.com/" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="A great service to get more leads on LinkedIn!" />
+  <meta property="og:description" content="Imagine a steady flow of leads from LinkedIn. This is not an automation tool, it's 100% human powered." />
+  <meta property="og:image" content="https://leadturk.com/img/vassi.png" />
+  <link rel="icon" href="img/favicon.png">
+
+  <title>LeadTurk - The Human-powered LinkedIn Lead Generation Tool</title>
+
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+  <div class="container px-5 text-center">
+
+    <h1 class="pb-1">LeadTurk Calculator</h1>
+    <h3 class="pt-1 pb-5">You define the rules, LeadTurk does the work</h3>
+
+    <div class="text-center mb-5">
+
+      <!-- BEGIN -->
+
+        <div class="form-row">
+          <div class="col-12 col-md-3">
+            <label class="col-form-label" for="first">How many connection invites per day?</label>
+          </div>
+          <div class="col-12 col-md-8">
+            <input max="100" id='first' type="text" class="form-control" name="bus_ticket" placeholder="Maximum 100" required/>
+          </div>
+        </div>
+        
+        <div class="form-row">
+          <div class="col-12 col-md-3">
+            <label class="col-form-label" for="second">How many messages per day?</label>
+          </div>
+          <div class="col-12 col-md-8">
+            <input max="60" id='second' type="text" class="form-control" name="plane_ticket"  placeholder="Maximum 60" required/><br />
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="col-12 col-md-3">
+            <label class="col-form-label" for="third">How many profile views per day?</label>
+          </div>
+          <div class="col-12 col-md-8">
+            <input max="100" id='third' type="text" class="form-control" name="hotel_expenses"  placeholder="Maximum 100" required/><br />
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="col-12 col-md-3">
+            <label class="col-form-label" for="fourth">Amount days per week (max 5)</label>
+          </div>
+          <div class="col-12 col-md-8">
+            <input max="5" id='fourth' type="text" class="form-control" name="eating_expenses"  placeholder="Maximum 5" required/>
+          </div>
+        </div>
+
+
+        <br /><br />
+        Total amount per day: $ <span id="total_per_day"></span>
+        <br />
+        <br />
+        Total amount per week: $ <span id="total_per_week"></span>
+        <br />
+        <br />
+        Total amount per month: $ <span id="total_per_month"></span>
+
+        <!-- <br /> -->
+        <!-- Total: <input id='total_expenses2' type="text" class="form-control" name="funding"  placeholder="Total Expenses..."/> -->
+
+      <!-- END -->
+
+    </div>
+
+  </div> <!-- /container -->
+
+  <footer class="footer text-center">
+    <p>&copy; <img class="img-responsive img-fluid" src="img/logo.png" alt="Logo LeadTurk" style="max-width: 100px;" /> 2018</p>
+    <p><a href="mailto:hello@leadturk.com">hello@leadturk.com</a></p>
+  </footer>
+
+
+  <!-- Bootstrap core JavaScript
+    ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+
+  <script type="text/javascript">
+    $('input').keyup(function(){ // run anytime the value changes
+      var connectionRequestsPerDay = Number($('#first').val());   // get value of field
+      var messagesPerDay = Number($('#second').val()); // convert it to a float
+      var profileViewsPerDay  = Number($('#third').val());
+      var daysPerWeek = Number($('#fourth').val());
+
+      var creditPrice = 0.15;
+
+      var connectionRequestsPerDayPrice = connectionRequestsPerDay * creditPrice;
+      var messagesPerDayPrice = messagesPerDay * (2*creditPrice);
+      var profileViewsPerDayPrice = profileViewsPerDay * (creditPrice/3);
+
+      var totalValuesPerDay = connectionRequestsPerDayPrice + messagesPerDayPrice + profileViewsPerDayPrice;
+      var totalValuesPerWeek = daysPerWeek * totalValuesPerDay;
+      var totalValuesPerMonth = totalValuesPerWeek * 4;
+
+
+      $('#total_per_day').html(
+          totalValuesPerDay
+      );
+
+      $('#total_per_week').html(
+        // Math.round(
+          totalValuesPerWeek
+          // )
+      ); 
+
+      $('#total_per_month').html(
+          totalValuesPerMonth
+      ); 
+
+      // document.getElementById('total_expenses2').value = connectionRequestsPerDayPrice + messagesPerDayPrice + profileViewsPerDayPrice;
+      // add them and output it
+    });
+
+  /*
+  $('input').keyup(function(){ // run anytime the value changes
+      var connectionRequestsPerDayPrice = parseFloat($('#first').val()); // get value of field
+      var messagesPerDayPrice = parseFloat($('#second').val()); // convert it to a float
+      var profileViewsPerDayPrice = parseFloat($('#third').val());
+      var fourthValue = parseFloat($('#fourth').val());
+      document.getElementById('#total_expenses').value(connectionRequestsPerDayPrice + messagesPerDayPrice + profileViewsPerDayPrice + fourthValue);
+  // add them and output it
+  });*/
+
+
+  </script>
+
+
+
+
+
+</body>
+
+</html>

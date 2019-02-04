@@ -131,7 +131,7 @@ b, strong {
     height: 50px;
     background: rgba(255, 255, 255, 0.6);
     border-color: #243c4f;
-    border-radius: 20px 0 0 20px;
+    border-radius: 0;
 }
 
 .btn-theme {
