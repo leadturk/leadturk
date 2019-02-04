@@ -44,55 +44,59 @@
 
       <!-- BEGIN -->
 
-        <div class="form-row">
-          <div class="col-12 col-md-3">
-            <label class="col-form-label" for="first">How many connection invites per day?</label>
-          </div>
-          <div class="col-12 col-md-8">
-            <input max="100" id='first' type="number" class="form-control" name="bus_ticket" placeholder="max 100" required/>
-          </div>
+      <div class="form-row">
+        <div class="col-12 col-md-3">
+          <label class="col-form-label" for="first">How many connection invites per day?</label>
         </div>
-        
-        <div class="form-row">
-          <div class="col-12 col-md-3">
-            <label class="col-form-label" for="second">How many messages per day?</label>
-          </div>
-          <div class="col-12 col-md-8">
-            <input max="60" id='second' type="number" class="form-control" name="plane_ticket"  placeholder="unlimited" required/><br />
-          </div>
+        <div class="col-12 col-md-8">
+          <input max="100" id='first' type="number" class="form-control" name="bus_ticket" placeholder="max 100" required />
+          <span id="connection-error" class="error text-danger d-none">value must be smaller than 100</span>
         </div>
+      </div>
 
-        <div class="form-row">
-          <div class="col-12 col-md-3">
-            <label class="col-form-label" for="third">How many profile views per day?</label>
-          </div>
-          <div class="col-12 col-md-8">
-            <input max="100" id='third' type="number" class="form-control" name="hotel_expenses"  placeholder="max 100" required/><br />
-          </div>
+      <div class="form-row">
+        <div class="col-12 col-md-3">
+          <label class="col-form-label" for="second">How many messages per day?</label>
         </div>
-
-        <div class="form-row">
-          <div class="col-12 col-md-3">
-            <label class="col-form-label" for="fourth">Amount days per week (max 5)</label>
-          </div>
-          <div class="col-12 col-md-8">
-            <input max="5" id='fourth' type="number" class="form-control" name="eating_expenses"  placeholder="Maximum 5" required/>
-          </div>
+        <div class="col-12 col-md-8">
+          <input max="60" id='second' type="number" class="form-control" name="plane_ticket" placeholder="unlimited" required /><br />
         </div>
-        <span class="text-danger error"></span>
+      </div>
+
+      <div class="form-row">
+        <div class="col-12 col-md-3">
+          <label class="col-form-label" for="third">How many profile views per day?</label>
+        </div>
+        <div class="col-12 col-md-8">
+          <input max="100" id='third' type="number" class="form-control" name="hotel_expenses" placeholder="max 100" required />
+          <span id="profile-views-error" class="error text-danger d-none">value must be smaller than 100</span>
+          <br>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="col-12 col-md-3">
+          <label class="col-form-label" for="fourth">Amount days per week (max 5)</label>
+        </div>
+        <div class="col-12 col-md-8">
+          <input max="5" id='fourth' type="number" class="form-control" name="eating_expenses" placeholder="Maximum 5" required />
+          <span id="amount-per-week-error" class="error text-danger d-none">value must be smaller than5</span>
+        </div>
+      </div>
+      <span class="text-danger error"></span>
 
 
-        <br /><br />
-        Total amount per day: $ <span id="total_per_day"></span>
-        <br />
-        <br />
-        Total amount per week: $ <span id="total_per_week"></span>
-        <br />
-        <br />
-        Total amount per month: $ <span id="total_per_month"></span>
+      <br /><br />
+      Total amount per day: $ <span id="total_per_day"></span>
+      <br />
+      <br />
+      Total amount per week: $ <span id="total_per_week"></span>
+      <br />
+      <br />
+      Total amount per month: $ <span id="total_per_month"></span>
 
-        <!-- <br /> -->
-        <!-- Total: <input id='total_expenses2' type="text" class="form-control" name="funding"  placeholder="Total Expenses..."/> -->
+      <!-- <br /> -->
+      <!-- Total: <input id='total_expenses2' type="text" class="form-control" name="funding"  placeholder="Total Expenses..."/> -->
 
       <!-- END -->
 
@@ -116,38 +120,38 @@
 
 
   <script type="text/javascript">
-
-    var i=0;
-    $('input').keypress(function(e) {
-        var $this = $(this);
-        var val = $this.val();
-        var maxVal = parseInt($this.attr("max"));
-        var span = $(".error");
-        var spanMessage = "<span id='error-" + i + "' class='error text-danger'>value must be smaller than " + maxVal + "</span>";
-        i++;
-
+    $('input').keyup(function(e) {
+      var $this = $(this);
+      var val = $this.val();
+      var maxVal = parseInt($this.attr("max"));
       if (val > maxVal) {
-        // do something so it stops adding the spanMessage after the first one :(
-        $( spanMessage ).insertAfter( $this );
-        e.preventDefault();
+        if ($this[0].nextElementSibling.tagName === "SPAN") {
+          $this[0].nextElementSibling.classList.remove('d-none');
+          e.preventDefault();
+        }
+      } else {
+        if ($this[0].nextElementSibling.tagName === "SPAN") {
+          if (!$this[0].nextElementSibling.classList.contains('d-none')) {
+            $this[0].nextElementSibling.classList.add('d-none');
+          }
+        }
       }
-      
     });
 
-    $('input').keyup(function(){ // run anytime the value changes
+    $('input').keyup(function() { // run anytime the value changes
 
-      
 
-      var connectionRequestsPerDay = Number($('#first').val());   // get value of field
+
+      var connectionRequestsPerDay = Number($('#first').val()); // get value of field
       var messagesPerDay = Number($('#second').val()); // convert it to a float
-      var profileViewsPerDay  = Number($('#third').val());
+      var profileViewsPerDay = Number($('#third').val());
       var daysPerWeek = Number($('#fourth').val());
 
       var creditPrice = 0.15;
 
       var connectionRequestsPerDayPrice = connectionRequestsPerDay * creditPrice;
-      var messagesPerDayPrice = messagesPerDay * (2*creditPrice);
-      var profileViewsPerDayPrice = profileViewsPerDay * (creditPrice/3);
+      var messagesPerDayPrice = messagesPerDay * (2 * creditPrice);
+      var profileViewsPerDayPrice = profileViewsPerDay * (creditPrice / 3);
 
       var totalValuesPerDay = connectionRequestsPerDayPrice + messagesPerDayPrice + profileViewsPerDayPrice;
       var totalValuesPerWeek = daysPerWeek * totalValuesPerDay;
@@ -155,38 +159,36 @@
 
 
       $('#total_per_day').html(
-          totalValuesPerDay
+        totalValuesPerDay
       );
 
       $('#total_per_week').html(
         // Math.round(
-          totalValuesPerWeek
-          // )
-      ); 
+        totalValuesPerWeek
+        // )
+      );
 
       $('#total_per_month').html(
-          totalValuesPerMonth
-      ); 
+        totalValuesPerMonth
+      );
 
       // document.getElementById('total_expenses2').value = connectionRequestsPerDayPrice + messagesPerDayPrice + profileViewsPerDayPrice;
       // add them and output it
     });
 
     $("input[type='number']").keyup(function() {
-      
+
     });
 
-  /*
-  $('input').keyup(function(){ // run anytime the value changes
-      var connectionRequestsPerDayPrice = parseFloat($('#first').val()); // get value of field
-      var messagesPerDayPrice = parseFloat($('#second').val()); // convert it to a float
-      var profileViewsPerDayPrice = parseFloat($('#third').val());
-      var fourthValue = parseFloat($('#fourth').val());
-      document.getElementById('#total_expenses').value(connectionRequestsPerDayPrice + messagesPerDayPrice + profileViewsPerDayPrice + fourthValue);
-  // add them and output it
-  });*/
-
-
+    /*
+    $('input').keyup(function(){ // run anytime the value changes
+        var connectionRequestsPerDayPrice = parseFloat($('#first').val()); // get value of field
+        var messagesPerDayPrice = parseFloat($('#second').val()); // convert it to a float
+        var profileViewsPerDayPrice = parseFloat($('#third').val());
+        var fourthValue = parseFloat($('#fourth').val());
+        document.getElementById('#total_expenses').value(connectionRequestsPerDayPrice + messagesPerDayPrice + profileViewsPerDayPrice + fourthValue);
+    // add them and output it
+    });*/
   </script>
 
 
