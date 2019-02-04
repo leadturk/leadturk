@@ -136,6 +136,7 @@ b, strong {
 
 .btn-theme {
     min-height: 50px;
+    border-radius: 0;
     background: #243c4f;
     color: #fff;
 }
