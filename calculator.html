@@ -116,17 +116,27 @@
 
 
   <script type="text/javascript">
+
+    var i=0;
+    $('input').keypress(function(e) {
+        var $this = $(this);
+        var val = $this.val();
+        var maxVal = parseInt($this.attr("max"));
+        var span = $(".error");
+        var spanMessage = "<span id='error-" + i + "' class='error text-danger'>value must be smaller than " + maxVal + "</span>";
+        i++;
+
+      if (val > maxVal) {
+        // do something so it stops adding the spanMessage after the first one :(
+        $( spanMessage ).insertAfter( $this );
+        e.preventDefault();
+      }
+      
+    });
+
     $('input').keyup(function(){ // run anytime the value changes
 
-      var $this = $(this);
-      var val = $this.val();
-      var maxVal = parseInt($this.attr("max"));
-      var span = $(".error");
-      var spanMessage = "<span class='error text-danger'>value must be smaller than " + maxVal + "</span>";
       
-      if (val > maxVal) {
-        $( spanMessage ).insertAfter( $this );
-      }
 
       var connectionRequestsPerDay = Number($('#first').val());   // get value of field
       var messagesPerDay = Number($('#second').val()); // convert it to a float
