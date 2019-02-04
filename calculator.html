@@ -125,8 +125,7 @@
       var spanMessage = "<span class='error text-danger'>value must be smaller than " + maxVal + "</span>";
       
       if (val > maxVal) {
-        $this.prop( "disabled", false );
-        // $( spanMessage ).insertAfter( $this );
+        $( spanMessage ).insertAfter( $this );
       }
 
       var connectionRequestsPerDay = Number($('#first').val());   // get value of field
