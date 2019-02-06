@@ -66,10 +66,10 @@ a {
 	color: #222222;
 }
 p {
-	margin-bottom: 0;
 	font-size: 15px;
 	line-height: 1.8;
 	color: #6F8BA4;
+	margin-bottom: 25px;
 }
 .ptb-100 {
     padding-top: 100px;
