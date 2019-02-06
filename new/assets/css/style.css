@@ -310,6 +310,7 @@ p {
 	box-shadow: 0 8px 6px -6px rgba(0,0,0,.4);
 	-webkit-animation: 500ms ease-in-out 0s normal none 1 running fadeInDown;
 	animation: 500ms ease-in-out 0s normal none 1 running fadeInDown;
+	padding: 10px 0;
 }
 .navbar {
 	padding: 20px 0;
@@ -1100,6 +1101,14 @@ p {
 /* ==============
     Start Testimonials CSS
 ==================================== */
+
+#team {
+ 
+}
+
+a:hover {
+	text-decoration: none !important;
+}
 .testimonials-area {
     padding-bottom: 70px;
     position: relative;
