@@ -1,0 +1,190 @@
+a {
+    color: #4977d6;
+}
+.bg-gray {
+	background-color: #edf5ff;
+}
+.section-title span {
+	color: #4977d6;
+}
+.section-title h3::before {
+	background: #4977d6;
+}
+.owl-theme .owl-nav [class*="owl-"] {
+	color: #4977d6;
+}
+.owl-theme .owl-nav [class*="owl-"]:hover {
+	background: #4977d6;
+}
+.btn-primary {
+	background-color: #4977d6;
+	border-color: #4977d6;
+}
+.btn-primary.disabled, .btn-primary:disabled {
+	background-color: #4977d6;
+	border-color: #4977d6;
+}
+.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show > .btn-primary.dropdown-toggle {
+	background-color: #6993ff;
+	border-color: #6993ff;
+}
+.btn-primary:hover {
+	background-color: #6993ff;
+	border-color: #6993ff;
+}
+.double-bounce1, .double-bounce2 {
+	background-color: #4977d6;
+}
+.navbar-brand span {
+	color: #4977d6;
+}
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+	color: #4977d6;
+}
+.navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show > .nav-link {
+	color: #4977d6;
+}
+.navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show > .nav-link {
+	color: #4977d6;
+}
+.creative-bg {
+	background: #4977d6;
+}
+.creative-bg-two {
+	background: #4977d6;
+}
+.single-features:hover {
+    background: #4977d6;
+}
+.single-features i {
+	color: #4977d6;
+}
+.about-content ul li i {
+    color: #4977d6;
+}
+.about-text ul li i {
+    color: #4977d6;
+}
+.about-text span {
+	background: rgba(88, 130, 253, .8);
+}
+.about-text .blockquote {
+	background: rgba(88, 130, 253, .4);
+}
+.single-services:hover {
+	background: #4977d6;
+}
+.single-services i {
+	background: #4977d6;
+}
+.single-services:hover i {
+	color: #4977d6;
+}
+.tabs a:hover i, .tabs .current a i {
+    background: #4977d6;
+}
+.tabs_item_content ul li i {
+	color: #4977d6;
+}
+.tabs a:hover, .tabs .current a {
+    color: #4977d6;
+}
+.funfacts-area::before {
+	background: #4977d6;
+}
+.funFact i {
+	color: #4977d6;
+}
+.fun-fact i {
+	color: #4977d6;
+}
+.single-box:hover span {
+    background: #4977d6;
+}
+.our-team .social li a {
+    color: #4977d6;
+}
+.our-team .social li a:hover {
+    background: #4977d6;
+}
+.single-team .pic::after {
+	border: 2px solid #4977d6;
+}
+.single-team .social-links li a:hover {
+	background: #4977d6;
+	border-color: #4977d6;
+}
+.single-team .team-content {
+	border-top: 2px solid #4977d6;
+}
+.testimonials-item:hover {
+    background: #4977d6;
+}
+.client-info .client-title span {
+    color: #4977d6;
+}
+.accordion .accordion-title {
+    background: #4977d6;
+}
+.pricingTable .title {
+    background: #4977d6;
+}
+.pricingTable:hover .price-value {
+    background: #4977d6;
+}
+.pricing-table:hover .icon {
+	background: #4977d6;
+}
+.pricing-table .pricing-table-header {
+	background: #4977d6;
+}
+.pricing-table .icon {
+	color: #4977d6;
+}
+.partner-area .owl-item img {
+	border: 1px solid #4977d6;
+}
+.subscribe-area {
+    background: #4977d6;
+}
+.newsletter h4 span {
+    color: #4977d6;
+}
+.page-title {
+    background: #4977d6;
+}
+.contact-box .icon {
+	border: 1px dashed #4977d6;
+	color: #4977d6;
+}
+.contact-box:hover .icon {
+	background: #4977d6;
+}
+.contact-box .content p a:hover {
+	color: #4977d6;
+}
+.single-footer .logo a span {
+	color: #4977d6;
+}
+.single-footer ul li a:hover {
+	color: #4977d6;
+}
+.single-footer .contact-info li i {
+	color: #4977d6;
+}
+.copyright-area ul li a {
+	border: 1px solid #4977d6;
+}
+.copyright-area ul li a:hover {
+	background: #4977d6;
+    border-color: #4977d6;
+}
+.go-top:hover {
+	background: #4977d6;
+}
+.navbar-light .navbar-toggler {
+	border-color: #5882fd;
+}
+.navbar-light .navbar-toggler-icon {
+	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(88, 130, 253, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
