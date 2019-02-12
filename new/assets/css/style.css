@@ -374,7 +374,7 @@ p {
 	text-align: center;
 }
 .pattern {
-	background: url(../../assets/img/pattern.png);
+	/*background: url(../../assets/img/pattern.png);*/
 	position: absolute;
 	bottom: 0;
 	left: 0;
@@ -383,7 +383,7 @@ p {
 	z-index: 1;
 }
 .pattern-2 {
-	background: url(../../assets/img/pattern-2.png);
+	/*background: url(../../assets/img/pattern-2.png);*/
 	position: absolute;
 	bottom: 0;
 	left: 0;
@@ -468,7 +468,7 @@ p {
 ==================================== */
 .about-area {
 	position: relative;
-	background-image: url(../../assets/img/pattern-4.png);
+	/*background-image: url(../../assets/img/pattern-4.png);*/
 	background-attachment: fixed;
 }
 .about-content {
@@ -1609,9 +1609,8 @@ a:hover {
 ==================================== */
 .footer-area {
     padding-bottom: 0;
-	background-image: url(../../assets/img/pattern-4.png);
+	/*background-image: url(../../assets/img/pattern-4.png);*/
 	background-attachment: fixed;
-  margin-top:-200px;
 }
 .single-footer .logo {
 	margin-top: -6px;
