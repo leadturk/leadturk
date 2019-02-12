@@ -1103,7 +1103,7 @@ p {
 ==================================== */
 
 #team {
- 
+
 }
 
 a:hover {
@@ -1735,4 +1735,10 @@ a:hover {
   font-weight: bold;
       font-size: 1.3em;
       color: #000;
+}
+
+
+.newsletter form .btn {
+    position: relative;
+
 }
