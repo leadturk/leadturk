@@ -141,18 +141,16 @@
 
     $('input').keyup(function() { // run anytime the value changes
 
-
-
       var connectionRequestsPerDay = Number($('#first').val()); // get value of field
       var messagesPerDay = Number($('#second').val()); // convert it to a float
       var profileViewsPerDay = Number($('#third').val());
       var daysPerWeek = Number($('#fourth').val());
 
-      var creditPrice = 0.05;
+      var creditPrice = 0.10;
 
       var connectionRequestsPerDayPrice = connectionRequestsPerDay * creditPrice;
       var messagesPerDayPrice = messagesPerDay * (2 * creditPrice);
-      var profileViewsPerDayPrice = profileViewsPerDay * (creditPrice / 3);
+      var profileViewsPerDayPrice = profileViewsPerDay * (creditPrice / 4);
 
       var totalValuesPerDay = connectionRequestsPerDayPrice + messagesPerDayPrice + profileViewsPerDayPrice;
       var totalValuesPerWeek = daysPerWeek * totalValuesPerDay;
