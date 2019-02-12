@@ -315,6 +315,10 @@ p {
 .navbar {
 	padding: 20px 0;
 }
+
+.navbar-toggler {
+	display: none;
+}
 .bg-light {
 	background-color: #fff !important;
 }
