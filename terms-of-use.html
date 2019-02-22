@@ -48,6 +48,7 @@
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
+      <a id="back-url" href="">back</a>
     </div>
   </nav>
   <!-- End Navbar Area -->
@@ -55,36 +56,42 @@
   <!-- Start Terms of Use Area -->
   <section id="terms-of-use" class="ptb-100">
     <div class="container">
-        <h1>Terms of Use</h1>
-        <div class="row">
-          <!-- <div class="col-lg-8 col-md-8 order-1 order-md-1"> -->
-          <div class="col-12">
-            <div class="about-content">
+      <h1>Terms of Use</h1>
+      <div class="row">
+        <!-- <div class="col-lg-8 col-md-8 order-1 order-md-1"> -->
+        <div class="col-12">
+          <div class="about-content">
 
-              <h4>LinkedIn</h4>
-              <p>I am voluntarily participating in a mass LinkedIn outreach tactic. This is notice that the LeadTurk Service may violate LinkedIn’s terms of use.</p>
+            <h4>LinkedIn</h4>
+            <p>I am voluntarily participating in a mass LinkedIn outreach tactic. This is notice that the LeadTurk Service may violate LinkedIn’s terms of use.</p>
 
-              <p>I understand that there are risks associated with my participation in this activity such as temporary LinkedIn account suspension, damaging of an existing business relationship, errors, the temporary request of LinkedIn to require an email address for all new connection requests, automatically getting logged out of your LinkedIn account several times per day, and risk of hacking. These outcomes may arise from my own or other’s actions, inactions or negligence, or the changing landscape of LinkedIn as a social network. Nonetheless, I assume all risks of my participation in this tactic, whether known or unknown to me.</p>
+            <p>I understand that there are risks associated with my participation in this activity such as temporary LinkedIn account suspension, damaging of an existing business relationship, errors, the temporary request of LinkedIn to require an
+              email address for all new connection requests, automatically getting logged out of your LinkedIn account several times per day, and risk of hacking. These outcomes may arise from my own or other’s actions, inactions or negligence, or
+              the changing landscape of LinkedIn as a social network. Nonetheless, I assume all risks of my participation in this tactic, whether known or unknown to me.</p>
 
-              <p>We Follow LinkedIn’s Professional Community Guidelines. Be Real. Be Professional. Be Nice. Respect Others' Rights and Follow the Law. And Respect LinkedIn's Rights.  A LinkedIn prospect may report a correspondence from us as “spam” and block your account from further contact. We cannot control the actions of third party prospects.</p>
+            <p>We Follow LinkedIn’s Professional Community Guidelines. Be Real. Be Professional. Be Nice. Respect Others' Rights and Follow the Law. And Respect LinkedIn's Rights. A LinkedIn prospect may report a correspondence from us as “spam” and
+              block your account from further contact. We cannot control the actions of third party prospects.</p>
 
-              <p>I understand that while Commerce Partners LTD dba LeadTurk does everything in it's ability to prevent these risks, they cannot control the actions of LinkedIn. </p>
+            <p>I understand that while Commerce Partners LTD dba LeadTurk does everything in it's ability to prevent these risks, they cannot control the actions of LinkedIn. </p>
 
-              <hr>
-              <h4>Release of liability</h4>
-              <p>I understand that by using the LeadTurk service, I release my liability and waive my right to sue Commerce Partners LTD dba LeadTurk, their employees, owners and agents (collectively “company”) from any and all claims, including claims of the company’s negligence, resulting in reputation damage, LinkedIn profile suspension, or economic loss I may suffer or which may result from my participation in hiring Lead Cookie.</p>
+            <hr>
+            <h4>Release of liability</h4>
+            <p>I understand that by using the LeadTurk service, I release my liability and waive my right to sue Commerce Partners LTD dba LeadTurk, their employees, owners and agents (collectively “company”) from any and all claims, including
+              claims of the company’s negligence, resulting in reputation damage, LinkedIn profile suspension, or economic loss I may suffer or which may result from my participation in hiring Lead Cookie.</p>
 
-              <hr>
-              <h4>Conflict</h4>
-              <p>We do not perform a check for conflicts of interest between you and prospects. We are sending a mass outreach campaign with LinkedIn. It is possible that we may reach out to an existing business relationship who is not already connected with you on LinkedIn. For example, we may accidentally message your existing customer who was never added as a first connection on LinkedIn.</p>
+            <hr>
+            <h4>Conflict</h4>
+            <p>We do not perform a check for conflicts of interest between you and prospects. We are sending a mass outreach campaign with LinkedIn. It is possible that we may reach out to an existing business relationship who is not already
+              connected with you on LinkedIn. For example, we may accidentally message your existing customer who was never added as a first connection on LinkedIn.</p>
 
-              <hr>
-              <h4>Human Errors</h4>
-              <p>Our process is done by hand, so at times there may be typos or errors in our outreach that could negatively affect your reputation. However, these are inevitable and while we will try to remedy any errors. We cannot fully prevent them.</p>
-            </div>
+            <hr>
+            <h4>Human Errors</h4>
+            <p>Our process is done by hand, so at times there may be typos or errors in our outreach that could negatively affect your reputation. However, these are inevitable and while we will try to remedy any errors. We cannot fully prevent
+              them.</p>
           </div>
         </div>
       </div>
+    </div>
   </section>
   <!-- End About Area -->
 
@@ -154,7 +161,12 @@
   <!-- Main JS -->
   <script src="assets/js/main.js"></script>
 
-    <script src="contact.js"></script>
+  <script src="contact.js"></script>
+  <script>
+    $(document).ready(function() {
+      $("#back-url").attr("href", document.referrer)
+    });
+  </script>
 </body>
 
 </html>
