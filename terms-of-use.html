@@ -166,7 +166,8 @@
     $(document).ready(function() {
       //$("#back-url").attr("href", document.referrer)
       $('#back-url').click(function(){
-        window.location.href = document.referrer;
+        var oldURL = document.referrer;
+        window.location.href = oldURL;
       })
     });
   </script>
