@@ -159,8 +159,8 @@
 
       var creditPrice = 0.10;
 
-      var connectionRequestsPerDayPrice = connectionRequestsPerDay * creditPrice;
-      var messagesPerDayPrice = messagesPerDay * (2 * creditPrice);
+      var connectionRequestsPerDayPrice = connectionRequestsPerDay * (creditPrice / 4);
+      var messagesPerDayPrice = messagesPerDay * (creditPrice);
       var profileViewsPerDayPrice = profileViewsPerDay * (creditPrice / 4);
 
       var totalValuesPerDay = connectionRequestsPerDayPrice + messagesPerDayPrice + profileViewsPerDayPrice;
