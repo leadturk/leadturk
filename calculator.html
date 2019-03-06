@@ -46,30 +46,43 @@
 
       <!-- BEGIN -->
 
-      <div class="form-row">
-        <div class="col-12 col-md-3">
+      <div class="form-row  mb-2">
+        <div class="col-12 col-md-4">
           <label class="col-form-label" for="first">How many connection invites per day?</label>
         </div>
-        <div class="col-12 col-md-8">
+        <div class="col-12 col-md-7">
           <input max="100" id='first' type="number" class="form-control" name="bus_ticket" placeholder="max 100" required />
           <span id="connection-error" class="error text-danger d-none">value must be smaller or equal to 100</span>
         </div>
       </div>
 
       <div class="form-row">
-        <div class="col-12 col-md-3">
+        <div class="col-12 col-md-4">
+        </div>
+        <div class="col-12 col-md-7">
+          <div class="form-check" style="float: left">
+            <input class="form-check-input" type="checkbox" value="" id="thankYouMessage">
+            <label class="form-check-label" for="thankYouMessage">
+              Do you want us to send a 'Thank you' message to the new connections?
+            </label>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-row mt-4">
+        <div class="col-12 col-md-4">
           <label class="col-form-label" for="second">How many messages per day?</label>
         </div>
-        <div class="col-12 col-md-8">
+        <div class="col-12 col-md-7">
           <input max="60" id='second' type="number" class="form-control" name="plane_ticket" placeholder="unlimited" required /><br />
         </div>
       </div>
 
       <div class="form-row">
-        <div class="col-12 col-md-3">
+        <div class="col-12 col-md-4">
           <label class="col-form-label" for="third">How many profile views per day?</label>
         </div>
-        <div class="col-12 col-md-8">
+        <div class="col-12 col-md-7">
           <input max="100" id='third' type="number" class="form-control" name="hotel_expenses" placeholder="max 100" required />
           <span id="profile-views-error" class="error text-danger d-none">value must be smaller or equal to 100</span>
           <br>
@@ -77,16 +90,16 @@
       </div>
 
       <div class="form-row">
-        <div class="col-12 col-md-3">
+        <div class="col-12 col-md-4">
           <label class="col-form-label" for="fourth">Amount days per week (max 5)</label>
         </div>
-        <div class="col-12 col-md-8">
+        <div class="col-12 col-md-7">
           <input max="5" id='fourth' type="number" class="form-control" name="eating_expenses" placeholder="Maximum 5" required />
           <span id="amount-per-week-error" class="error text-danger d-none">value must be smaller or equal to 5</span>
         </div>
       </div>
       <span class="text-danger error"></span>
-
+      <br />
       <br />
       <br />
       Price per day: $ <span id="total_per_day"></span>
@@ -171,6 +184,9 @@
       var creditsPerWeek = Math.round(totalValuesPerWeek / creditPrice);
       var creditsPerMonth = Math.round(totalValuesPerMonth / creditPrice);
 
+      if ($('#thankYouMessage').is(':checked')) {
+        totalValuesPerDay = totalValuesPerDay + (0.3 * connectionRequestsPerDayPrice);
+      }
 
       $('#total_per_day').html(
         roundToTwo(totalValuesPerDay)
