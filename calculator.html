@@ -163,8 +163,11 @@
       }
     });
 
-    $('input').keyup(function() { // run anytime the value changes
+    $('#thankYouMessage').click(function() {
+      calculate();
+    });
 
+    function calculate() {
       var connectionRequestsPerDay = Number($('#first').val()); // get value of field
       var messagesPerDay = Number($('#second').val()); // convert it to a float
       var profileViewsPerDay = Number($('#third').val());
@@ -214,24 +217,12 @@
       $('#credits_per_month').html(
         creditsPerMonth
       );
+    }
 
-      // document.getElementById('total_expenses2').value = connectionRequestsPerDayPrice + messagesPerDayPrice + profileViewsPerDayPrice;
-      // add them and output it
+    $('input').keyup(function() { // run anytime the value changes
+      calculate();
     });
 
-    $("input[type='number']").keyup(function() {
-
-    });
-
-    /*
-    $('input').keyup(function(){ // run anytime the value changes
-        var connectionRequestsPerDayPrice = parseFloat($('#first').val()); // get value of field
-        var messagesPerDayPrice = parseFloat($('#second').val()); // convert it to a float
-        var profileViewsPerDayPrice = parseFloat($('#third').val());
-        var fourthValue = parseFloat($('#fourth').val());
-        document.getElementById('#total_expenses').value(connectionRequestsPerDayPrice + messagesPerDayPrice + profileViewsPerDayPrice + fourthValue);
-    // add them and output it
-    });*/
   </script>
 
 
