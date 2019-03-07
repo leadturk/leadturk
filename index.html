@@ -6,11 +6,11 @@
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-131465208-1"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
-  gtag('config', 'UA-131465208-1');
-</script>
+    gtag('config', 'UA-131465208-1');
+  </script>
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -802,7 +802,7 @@
   <!-- End Testimonials Area -->
 
   <!-- Start FAQ Area -->
-  <section id="faq" class="faq-area ptb-100">
+  <section id="price" class="price-area ptb-100">
     <div class="container">
       <div class="section-title">
         <span>FAQ</span>
@@ -856,113 +856,111 @@
   </section>
   <!-- End FAQ Area -->
 
-  <!-- Start Pricing Area -->
-  <!-- <section id="pricing" class="pricing-area bg-gray ptb-100">
-            <div class="container">
-                <div class="section-title">
-                    <span>Pricing</span>
-                    <h3>Our Packages</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                </div>
+  <!-- Start FAQ Area -->
+  <section id="faq" class="faq-area ptb-100 bg-gray">
+    <div class="container">
+      <div class="section-title">
+        <span>Each LinkedIn activity is "paid" with the credits. Calculate your price below.</span>
+        <h3>LeadTurk Price Calculator</h3>
+      </div>
 
-                <div class="row">
-                    <div class="col-lg-4 col-md-6">
-                        <div class="pricingTable">
-                            <h3 class="title">Basic Plan</h3>
+      <div class="row">
+        <div class="col-12">
 
-                            <div class="price-value">$29.00
-                                <span class="month">/month</span>
-                            </div>
 
-                            <ul class="pricing-content">
-                                <li>Unlimited Reservations</li>
-                                <li>6 Clients and Products</li>
-                                <li>Housekeeping Status</li>
-                                <li>Invoicing and Payments</li>
-                                <li>Data Security and Backups</li>
-                            </ul>
-
-                            <a href="#" class="btn btn-primary">Select Plan</a>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6">
-                        <div class="pricingTable">
-                            <h3 class="title">Advanced Plan</h3>
-
-                            <div class="price-value">$49.00
-                                <span class="month">/month</span>
-                            </div>
-
-                            <ul class="pricing-content">
-                                <li>Unlimited Reservations</li>
-                                <li>6 Clients and Products</li>
-                                <li>Housekeeping Status</li>
-                                <li>Invoicing and Payments</li>
-                                <li>Data Security and Backups</li>
-                            </ul>
-
-                            <a href="#" class="btn btn-primary">Select Plan</a>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 offset-lg-0 offset-md-3">
-                        <div class="pricingTable">
-                            <h3 class="title">Expert Plan</h3>
-
-                            <div class="price-value">$69.00
-                                <span class="month">/month</span>
-                            </div>
-
-                            <ul class="pricing-content">
-                                <li>Unlimited Reservations</li>
-                                <li>6 Clients and Products</li>
-                                <li>Housekeeping Status</li>
-                                <li>Invoicing and Payments</li>
-                                <li>Data Security and Backups</li>
-                            </ul>
-
-                            <a href="#" class="btn btn-primary">Select Plan</a>
-                        </div>
-                    </div>
-                </div>
+          <div class="form-row  mb-2">
+            <div class="col-12 col-md-4">
+              <label class="col-form-label" for="first">How many connection invites per day?</label>
             </div>
-        </section> -->
-  <!-- End Pricing Area -->
-
-  <!-- Start Partner Area -->
-  <!-- <div class="partner-area ptb-100">
-            <div class="container">
-                <div class="row">
-                    <div class="partner-slides">
-                        <div class="col-lg-12 col-md-12">
-                            <a href="#"><img src="assets/img/partner-1.jpg" alt="partner"></a>
-                        </div>
-
-                        <div class="col-lg-12 col-md-12">
-                            <a href="#"><img src="assets/img/partner-2.jpg" alt="partner"></a>
-                        </div>
-
-                        <div class="col-lg-12 col-md-12">
-                            <a href="#"><img src="assets/img/partner-3.jpg" alt="partner"></a>
-                        </div>
-
-                        <div class="col-lg-12 col-md-12">
-                            <a href="#"><img src="assets/img/partner-4.jpg" alt="partner"></a>
-                        </div>
-
-                        <div class="col-lg-12 col-md-12">
-                            <a href="#"><img src="assets/img/partner-5.jpg" alt="partner"></a>
-                        </div>
-
-                        <div class="col-lg-12 col-md-12">
-                            <a href="#"><img src="assets/img/partner-6.jpg" alt="partner"></a>
-                        </div>
-                    </div>
-                </div>
+            <div class="col-12 col-md-7">
+              <input max="100" id='first' type="number" class="form-control" name="bus_ticket" placeholder="max 100" required />
+              <span id="connection-error" class="error text-danger d-none">value must be smaller or equal to 100</span>
             </div>
-        </div> -->
-  <!-- End Partner Area -->
+          </div>
+
+          <div class="form-row">
+            <div class="col-12 col-md-4">
+            </div>
+            <div class="col-12 col-md-7">
+              <div class="form-check" style="float: left">
+                <input class="form-check-input" type="checkbox" value="" id="thankYouMessage">
+                <label class="form-check-label" for="thankYouMessage">
+                  Do you want us to send a 'Thank you' message to the new connections?
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-row mt-4">
+            <div class="col-12 col-md-4">
+              <label class="col-form-label" for="second">How many messages per day?</label>
+            </div>
+            <div class="col-12 col-md-7">
+              <input max="60" id='second' type="number" class="form-control" name="plane_ticket" placeholder="unlimited" required /><br />
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="col-12 col-md-4">
+              <label class="col-form-label" for="third">How many profile views per day?</label>
+            </div>
+            <div class="col-12 col-md-7">
+              <input max="100" id='third' type="number" class="form-control" name="hotel_expenses" placeholder="max 100" required />
+              <span id="profile-views-error" class="error text-danger d-none">value must be smaller or equal to 100</span>
+              <br>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="col-12 col-md-4">
+              <label class="col-form-label" for="fourth">Amount days per week (max 5)</label>
+            </div>
+            <div class="col-12 col-md-7">
+              <input max="5" id='fourth' type="number" class="form-control" name="eating_expenses" placeholder="Maximum 5" required />
+              <span id="amount-per-week-error" class="error text-danger d-none">value must be smaller or equal to 5</span>
+            </div>
+          </div>
+          <span class="text-danger error"></span>
+          <br />
+          <br />
+          <div class="row">
+            <div class="col-12 col-md-4">
+            </div>
+            <div class="col-12 col-md-7">
+              <div class="row">
+                  <div class="col-12 col-md-6">Price per day: $ <b><span id="total_per_day"></span></b></div>
+                  <div class="col-12 col-md-6">Credits per day: <span class="big" id="credits_per_day"></span></div>
+              </div>
+              <div class="row">
+                  <div class="col-12 col-md-6">Price per week: $ <b><span  id="total_per_week"></span></b></div>
+                  <div class="col-12 col-md-6">Credits per week: <span class="big" id="credits_per_week"></span></div>
+              </div>
+              <div class="row">
+                  <div class="col-12 col-md-6">Price per month: $ <b><span id="total_per_month"></span></b></div>
+                  <div class="col-12 col-md-6">Credits per month: <span class="big" id="credits_per_month"></span></div>
+              </div>
+            </div>
+           
+          </div>
+          
+          
+          <br />
+          <br />
+          
+          <br />
+          
+          <br />
+          <br />
+          
+          <br />
+          
+
+
+
+        </div>
+      </div>
+    </div>
+  </section>
 
   <!-- Start Subscribe Area-->
   <section class="subscribe-area ptb-100">
@@ -1055,13 +1053,13 @@
           </div>
 
           <div class="col-lg-5 col-md-5">
-            <!-- <ul>
-                                <li><a href="#" class="icofont-facebook"></a></li>
-                                <li><a href="#" class="icofont-twitter"></a></li>
-                                <li><a href="#" class="icofont-instagram"></a></li>
-                                <li><a href="#" class="icofont-linkedin"></a></li>
-                                <li><a href="#" class="icofont-vimeo"></a></li>
-                            </ul> -->
+              <!-- <ul>
+                  <li><a href="#" class="icofont-facebook"></a></li>
+                  <li><a href="#" class="icofont-twitter"></a></li>
+                  <li><a href="#" class="icofont-instagram"></a></li>
+                  <li><a href="#" class="icofont-linkedin"></a></li>
+                  <li><a href="#" class="icofont-vimeo"></a></li>
+              </ul> -->
             <a class="float-right" href="mailto:hello@leadturk.com">hello@leadturk.com</a>
           </div>
         </div>
@@ -1071,6 +1069,8 @@
   <!-- End Footer Area -->
 
   <div class="go-top"><i class="icofont-stylish-up"></i></div>
+
+  
 
   <!-- Jquery Min JS -->
   <script src="assets/js/jquery.min.js"></script>
@@ -1095,7 +1095,93 @@
   <!-- Main JS -->
   <script src="assets/js/main.js"></script>
 
-    <script src="js/contact.js"></script>
+  <script src="js/contact.js"></script>
+
+  <script type="text/javascript">
+    function roundToTwo(num) {
+        return +(Math.round(num + "e+2")  + "e-2");
+    }
+    $('input').keyup(function(e) {
+      var $this = $(this);
+      var val = $this.val();
+      var maxVal = parseInt($this.attr("max"));
+      if (val > maxVal) {
+        if ($this[0].nextElementSibling.tagName === "SPAN") {
+          $this[0].nextElementSibling.classList.remove('d-none');
+          $this.val(maxVal);
+          e.preventDefault();
+        }
+      } else {
+        if ($this[0].nextElementSibling.tagName === "SPAN") {
+          if (!$this[0].nextElementSibling.classList.contains('d-none')) {
+            $this[0].nextElementSibling.classList.add('d-none');
+          }
+        }
+      }
+    });
+
+    $('#thankYouMessage').click(function() {
+      calculate();
+    });
+
+    function calculate() {
+      var connectionRequestsPerDay = Number($('#first').val()); // get value of field
+      var messagesPerDay = Number($('#second').val()); // convert it to a float
+      var profileViewsPerDay = Number($('#third').val());
+      var daysPerWeek = Number($('#fourth').val());
+
+      var creditPrice = 0.10;
+
+      var connectionRequestsPerDayPrice = connectionRequestsPerDay * (creditPrice / 2);
+      var messagesPerDayPrice = messagesPerDay * (creditPrice);
+      var profileViewsPerDayPrice = profileViewsPerDay * (creditPrice / 4);
+
+      var totalValuesPerDay = connectionRequestsPerDayPrice + messagesPerDayPrice + profileViewsPerDayPrice;
+      var totalValuesPerWeek = daysPerWeek * totalValuesPerDay;
+      var totalValuesPerMonth = totalValuesPerWeek * 4;
+
+      var creditsPerDay = Math.round(totalValuesPerDay / creditPrice);
+      var creditsPerWeek = Math.round(totalValuesPerWeek / creditPrice);
+      var creditsPerMonth = Math.round(totalValuesPerMonth / creditPrice);
+
+      if ($('#thankYouMessage').is(':checked')) {
+        totalValuesPerDay = totalValuesPerDay + (0.3 * connectionRequestsPerDayPrice);
+      }
+
+      $('#total_per_day').html(
+        roundToTwo(totalValuesPerDay)
+      );
+
+      $('#credits_per_day').html(
+        creditsPerDay
+      );
+
+      $('#total_per_week').html(
+        // Math.round(
+        roundToTwo(totalValuesPerWeek)
+        // )
+      );
+
+      $('#credits_per_week').html(
+        creditsPerWeek
+      );
+
+
+      $('#total_per_month').html(
+        roundToTwo(totalValuesPerMonth)
+      );
+
+      $('#credits_per_month').html(
+        creditsPerMonth
+      );
+    }
+
+    $('input').keyup(function() { // run anytime the value changes
+      calculate();
+    });
+
+  </script>
+
 </body>
 
 </html>
