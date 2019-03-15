@@ -157,6 +157,10 @@ b, strong {
   border-top: .05rem solid #e5e5e5;
 }
 
+.profile-img {
+  height: 240px;
+}
+
 /* Customize container */
 @media (min-width: 48em) {
   .container {
@@ -220,7 +224,7 @@ b, strong {
 }
 
 .sticky-share a:hover {
-  text-decoration: none;  
+  text-decoration: none;
 }
 
 .sticky-share a img {
