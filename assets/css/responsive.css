@@ -517,3 +517,7 @@
 		padding: 20px;
 	}
 }
+
+#submit_btn {
+  right: 0px;
+}
