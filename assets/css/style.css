@@ -1751,3 +1751,12 @@ a:hover {
     position: relative;
 
 }
+
+/**/
+
+@media only screen and (max-width : 768px) {
+	iframe {
+		max-width: 100%;
+		height: 300px;
+	}
+}

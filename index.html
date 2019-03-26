@@ -95,11 +95,11 @@
     <div class="d-table">
       <div class="d-table-cell">
         <div class="container">
-          <div class="row">
+          <div class="row  align-items-center">
             <div class="col-lg-6 col-md-6">
               <div class="main-banner-content">
                 <h1>The Human-powered LinkedIn Automation Service.</h1>
-      
+
                 <h4 class="font-weight-light">Taking LinkedIn automation to the next level with done-for-you laser-targeted lead lists.</h4>
                 <h4 class="mt-3 font-weight-light">With custom targeting based on gender and age.</h4>
                 <h4 class="h3 mt-3 mb-5 font-weight-light">No risks. No commitments.</h4>
@@ -111,8 +111,15 @@
             <div class="col-lg-6 col-md-6">
               <div class="banner-img">
                 <!-- <img src="assets/img/main-banner.png" alt="img"> -->
-                <div class="embed-responsive embed-responsive-16by9">
-                  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/m59-OnAGsDw?rel=0" allowfullscreen></iframe>
+                <img id="youtube-thumb" src="/img/robots.jpg">
+                <div class="d-none  embed-responsive embed-responsive-16by9">
+
+
+
+                  <iframe id="youtube-vid"  class="embed-responsive-item" src="https://www.youtube.com/embed/m59-OnAGsDw?rel=0&modestbranding=1" allowfullscreen></iframe>
+
+
+
                 </div>
               </div>
             </div>
@@ -1127,6 +1134,15 @@
 
   <script src="js/contact.js"></script>
 
+<script type="text/javascript">
+$(document).ready(function(){
+  $('#youtube-thumb').click(function(){
+    $(this).hide();
+    $('#youtube-vid').parent().removeClass('d-none');
+  });
+});
+
+</script>
   <script type="text/javascript">
     function roundToTwo(num) {
       return +(Math.round(num + "e+2") + "e-2");

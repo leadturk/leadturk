@@ -6,6 +6,6 @@ $(document).ready(function(){
         console.log(sPosition);
         if(sPosition > (mHeight/2)) {
         	$(".sticky-share").addClass('visible');
-        } 
+        }
     });
 });
