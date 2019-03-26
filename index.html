@@ -116,7 +116,7 @@
 
 
 
-                  <iframe id="youtube-vid"  class="embed-responsive-item" src="https://www.youtube.com/embed/m59-OnAGsDw?rel=0&modestbranding=1" allowfullscreen></iframe>
+                  <iframe  allow="autoplay; encrypted-media" id="youtube-vid"  class="embed-responsive-item" src="https://www.youtube.com/embed/m59-OnAGsDw?rel=0&modestbranding=1" allowfullscreen></iframe>
 
 
 
@@ -1138,6 +1138,7 @@
 $(document).ready(function(){
   $('#youtube-thumb').click(function(){
     $(this).hide();
+     $("#youtube-vid")[0].src += "&autoplay=1";
     $('#youtube-vid').parent().removeClass('d-none');
   });
 });
