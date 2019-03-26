@@ -359,7 +359,7 @@ p {
 }
 .main-banner-content {
 	text-align: left;
-	margin-top: 50px;
+	/*margin-top: 50px;*/
 	position: relative;
 	z-index: 2;
 }
