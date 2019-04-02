@@ -6,8 +6,8 @@ body {
 }
 
 blockquote {
-    font-style: italic;
-    color: #868e96
+  font-style: italic;
+  color: #868e96
 }
 
 a {
@@ -35,47 +35,47 @@ p strong {
 }
 
 .section-heading {
-    font-size: 36px;
-    font-weight: 700;
-    margin-top: 60px
+  font-size: 36px;
+  font-weight: 700;
+  margin-top: 60px
 }
 
 .caption {
-    font-size: 14px;
-    font-style: italic;
-    display: block;
-    margin: 0;
-    padding: 10px;
-    text-align: center;
-    border-bottom-right-radius: 5px;
-    border-bottom-left-radius: 5px
+  font-size: 14px;
+  font-style: italic;
+  display: block;
+  margin: 0;
+  padding: 10px;
+  text-align: center;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px
 }
 
 ::-moz-selection {
-    color: #fff;
-    background: #4977d6;
-    text-shadow: none
+  color: #fff;
+  background: #4977d6;
+  text-shadow: none
 }
 
 ::selection {
-    color: #fff;
-    background: #4977d6;
-    text-shadow: none
+  color: #fff;
+  background: #4977d6;
+  text-shadow: none
 }
 
 img::-moz-selection {
-    color: #fff;
-    background: 0 0
+  color: #fff;
+  background: 0 0
 }
 
 img::selection {
-    color: #fff;
-    background: 0 0
+  color: #fff;
+  background: 0 0
 }
 
 img::-moz-selection {
-    color: #fff;
-    background: 0 0
+  color: #fff;
+  background: 0 0
 }
 
 b, strong {
@@ -86,20 +86,15 @@ b, strong {
   width: 100% !important;
 }
 
-.gray {
-
-}
+.gray {}
 
 .blue {
   color: #4977d6 !important;
 }
 
-.green {
-}
+.green {}
 
-.red {
-
-}
+.red {}
 
 .bg-gray {
   background-color: #e8e8e8;
@@ -109,17 +104,13 @@ b, strong {
   background-color: #4977d6 !important;
 }
 
-.bg-green {
-}
+.bg-green {}
 
-.bg-red {
+.bg-red {}
 
-}
+.container {}
 
-.container {
-}
 /* Everything but the jumbotron gets side spacing for mobile first views */
-
 #logo {
   max-width: 300px;
 }
@@ -132,17 +123,17 @@ b, strong {
 }
 
 .form-control {
-    height: 50px;
-    background: rgba(255, 255, 255, 0.6);
-    border-color: #243c4f;
-    border-radius: 0;
+  height: 50px;
+  background: rgba(255, 255, 255, 0.6);
+  border-color: #243c4f;
+  border-radius: 0;
 }
 
 .btn-theme {
-    min-height: 50px;
-    border-radius: 0;
-    background: #243c4f;
-    color: #fff;
+  min-height: 50px;
+  border-radius: 0;
+  background: #243c4f;
+  color: #fff;
 }
 
 .btn-theme:hover {
@@ -167,12 +158,14 @@ b, strong {
     /*max-width: 46rem;*/
   }
 }
-.container-narrow > hr {
+
+.container-narrow>hr {
   margin: 2rem 0;
 }
 
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 48em) {
+
   /* Remove the padding we set earlier */
   .header,
   .marketing,
@@ -180,6 +173,7 @@ b, strong {
     padding-right: 0;
     padding-left: 0;
   }
+
   /* Space out the masthead */
   .header {
     margin-bottom: 2rem;
@@ -191,11 +185,13 @@ b, strong {
     display: flex;
     flex-direction: column;
   }
-  body > div > div.col-sm-12.my-5.text-center > div > div > input, #submit_btn {
-        width: 100%;
-        border-radius: 0px;
-        margin-bottom: 10px;
+
+  body>div>div.col-sm-12.my-5.text-center>div>div>input, #submit_btn {
+    width: 100%;
+    border-radius: 0px;
+    margin-bottom: 10px;
   }
+
   #submit_btn {
     margin-left: 0px;
   }
@@ -207,7 +203,6 @@ b, strong {
   bottom: 0;
   background: rgba(0, 0, 0, 0.8);
   color: #fff;
-
 }
 
 .sticky-share.visible {
