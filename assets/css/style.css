@@ -1774,7 +1774,7 @@ a:hover {
     border-color: #28a745 !important;
 }
 
-// Medium devices (tablets, 992px and up)
+
 @media (min-width: 992px) {
    #features .col-feature .single-features {
       height: 330px !important;
