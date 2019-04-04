@@ -30,7 +30,7 @@ $(document)
 
     var urlParams = new URLSearchParams(location.search);
     if(urlParams.has('ref')) {
-      setCookie('ref', urlParams.get('ref'), 7);
+      setCookie('ref', urlParams.get('ref'), 30);
     }
 
 
