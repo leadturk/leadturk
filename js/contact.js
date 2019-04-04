@@ -27,6 +27,13 @@ function eraseCookie(name) {
  --------------------------------------------- */
 $(document)
   .ready(function () {
+
+    var urlParams = new URLSearchParams(location.search);
+    if(urlParams.has('ref')) {
+      setCookie('ref', urlParams.get('ref'), 7);
+    }
+
+
     $("#submit_btn")
       .click(function () {
         //get input field values
@@ -42,11 +49,7 @@ $(document)
         if(ref) {
           choice = choice + " : ref-cookie = " + ref;
         }
-        var urlParams = new URLSearchParams(location.search);
-        if(urlParams.has('ref')) {
-          setCookie('ref', urlParams.get('ref'), 7);
-          choice = choice + " : ref-url = " + urlParams.get('ref');
-        }
+
         var proceed = true;
         if(user_name == "") {
           $('input[name=name]')
