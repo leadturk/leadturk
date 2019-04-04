@@ -67,14 +67,16 @@
             <li><i class="icofont-ui-check"></i> We will rewrite your profile’s tagline so it gives a clear message to your target group.</li>
             <li><i class="icofont-ui-check"></i> We will create a new banner image for you.</li>
             <li><i class="icofont-ui-check"></i> We will remove your old company page and create a new one without fake profiles in it. This is very important so your future clients have trust in you.</li>
-            <li><i class="icofont-ui-check"></i> We will come up with 5 different messages for you: a connection request message, a “thank you” message and 3 more drip messages. These messages will be non-salesy, their purpose would be to interest your target group in your product.</li>
+            <li><i class="icofont-ui-check"></i> We will come up with 5 different messages for you: a connection request message, a “thank you” message and 3 more drip messages. These messages will be non-salesy, their purpose would be to interest
+              your target group in your product.</li>
             <li><i class="icofont-ui-check"></i> We will create a list of your target audience. NOTE: You need to purchase LinkedIn’s Sales Navigator for this: https://business.linkedin.com/sales-solutions/compare-plans</li>
-            <li><i class="icofont-ui-check"></i> We start sending out messages 5 days a week, we build up the number of new connection request, starting from 20, going up to 60 per day. This is because if we suddenly start connecting with a lot of people, LinkedIn will flag this as unusual behavior.</li>
-            <li><i class="icofont-ui-check"></i> Whenever there is an interest in your product, we let you know and then you take over the conversation to close the deal. NOTE: We DO NOT close deals, we only generate leads. You need to close the deal yourself or with the help of an USA sales person in your team.</li>
+            <li><i class="icofont-ui-check"></i> We start sending out messages 5 days a week, we increase the number of new connection requests slowly, starting from 20, going up to 60 per day. This is because if we suddenly start connecting with a lot of people, LinkedIn will flag this as unusual behavior.</li>
+            <li><i class="icofont-ui-check"></i> Whenever there is an interest in your service, we let you know and then you take over the conversation to close the deal. NOTE: We DO NOT close deals, we only generate leads. You need to close the
+              deal yourself or with the help of an USA sales person in your team.</li>
           </ul>
         </div>
       </div>
-      <br/>
+      <br />
       Pay now:
       <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
         <input type="hidden" name="cmd" value="_s-xclick">
@@ -120,22 +122,18 @@
   <script src="assets/js/bootstrap.min.js"></script>
   <!--End of Tawk.to Script-->
   <script>
+    $(document)
+      .ready(function() {
 
-  $(document)
-    .ready(function () {
-
-      var urlParams = new URLSearchParams(location.search);
-      if(urlParams.has('client')) {
-        if(urlParams.get('client') == "jose-ramon-fernandez"){
-          $('#offer').show();
+        var urlParams = new URLSearchParams(location.search);
+        if (urlParams.has('client')) {
+          if (urlParams.get('client') == "jose-ramon-fernandez") {
+            $('#offer').show();
+          }
         }
-      }
 
 
-    });
-
-
-
+      });
   </script>
 </body>
 
